@@ -45,3 +45,4 @@ custom_components/
 # Custom patterns
 *.pem
 @eaDir
+harmony_harmony_hub.conf
