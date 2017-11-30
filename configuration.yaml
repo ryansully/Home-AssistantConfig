@@ -34,7 +34,7 @@ http:
     - ::1
     - 192.168.0.0/24
   ip_ban_enabled: True
-  login_attempts_threshold: 5
+  login_attempts_threshold: 3
 
 # Checks for available updates
 # Note: This component will send some information about your system to
