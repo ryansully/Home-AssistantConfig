@@ -1,0 +1,34 @@
+# Weather prediction
+- platform: yr
+
+# Template sensor for Harmony Hub
+- platform: template
+  sensors:
+    harmony_hub:
+      value_template: '{{ states.remote.harmony_hub.attributes.current_activity }}'
+      friendly_name: 'Harmony Hub'
+
+- platform: speedtest
+  minute: 30
+  hour:
+    - 0
+    - 6
+    - 12
+    - 18
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+
+- platform: synologydsm
+  host: 192.168.0.20
+  username: !secret synologydsm_username
+  password: !secret synologydsm_password
+  monitored_conditions:
+    - cpu_total_load
+    - memory_real_usage
+    - network_up
+    - network_down
+    - volume_size_total
+    - volume_size_used
+    - volume_percentage_used
