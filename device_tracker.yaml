@@ -1,0 +1,5 @@
+- platform: ddwrt
+  host: !secret ddwrt_host
+  username: !secret ddwrt_username
+  password: !secret ddwrt_password
+  track_new_devices: no
