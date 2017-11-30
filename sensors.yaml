@@ -22,6 +22,7 @@
 
 - platform: synologydsm
   host: 192.168.0.20
+  port: 50000
   username: !secret synologydsm_username
   password: !secret synologydsm_password
   monitored_conditions:
