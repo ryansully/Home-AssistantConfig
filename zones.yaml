@@ -1,0 +1,9 @@
+- name: School
+  latitude: !secret zone_school_latitude
+  longitude: !secret zone_school_longitude
+  icon: mdi:school
+
+- name: Work
+  latitude: !secret zone_work_latitude
+  longitude: !secret zone_work_longitude
+  icon: mdi:briefcase
