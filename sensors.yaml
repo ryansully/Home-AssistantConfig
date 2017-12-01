@@ -1,6 +1,13 @@
 # Weather prediction
 - platform: yr
 
+# Track battery level
+- platform: mqtt
+  state_topic: "owntracks/ryan/phone"
+  name: "Ryan's Phone Battery Level"
+  unit_of_measurement: "%"
+  value_template: '{{ value_json.batt }}'
+
 # Template sensor for Harmony Hub
 - platform: template
   sensors:

@@ -3,3 +3,5 @@
   username: !secret ddwrt_username
   password: !secret ddwrt_password
   track_new_devices: no
+- platform: owntracks
+  max_gps_accuracy: 200

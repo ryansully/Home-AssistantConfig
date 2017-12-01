@@ -67,6 +67,13 @@ sun:
 tts:
   - platform: google
 
+# MQTT broker
+mqtt:
+  broker: !secret mqtt_server
+  port: !secret mqtt_port
+  username: !secret mqtt_user
+  password: !secret mqtt_password
+
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
