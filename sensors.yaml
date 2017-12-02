@@ -7,6 +7,11 @@
   name: "Ryan's Phone Battery Level"
   unit_of_measurement: "%"
   value_template: '{{ value_json.batt }}'
+- platform: mqtt
+  state_topic: "owntracks/chelse/phone"
+  name: "Chelse's Phone Battery Level"
+  unit_of_measurement: "%"
+  value_template: '{{ value_json.batt }}'
 
 # Template sensor for Harmony Hub
 - platform: template
