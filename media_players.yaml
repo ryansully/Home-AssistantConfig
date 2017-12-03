@@ -1,0 +1,61 @@
+- platform: kodi
+  host: 192.168.0.50
+  username: !secret kodi_username
+  password: !secret kodi_password
+
+- platform: plex
+
+- platform: samsungtv
+  host: 192.168.0.116
+
+- platform: yamaha
+  host: receiver.lan
+  source_names:
+    HDMI1: "HTPC"
+    HDMI3: "Wii U"
+    HDMI4: "Fire TV"
+    HDMI5: "Chromecast"
+
+- platform: universal
+  name: living_room_universal
+  children:
+    - media_player.living_room_chromecast
+    - media_player.aftn
+    - media_player.kodi
+  commands:
+    turn_on:
+      service: media_player.turn_on
+      data:
+        entity_id: media_player.yamaha_receiver
+    turn_off:
+      service: media_player.turn_off
+      data:
+        entity_id: media_player.yamaha_receiver
+    volume_up:
+      service: media_player.volume_up
+      data:
+        entity_id: media_player.yamaha_receiver
+    volume_down:
+      service: media_player.volume_down
+      data:
+        entity_id: media_player.yamaha_receiver
+    volume_mute:
+      service: media_player.volume_mute
+      data:
+        entity_id: media_player.yamaha_receiver
+    select_source:
+      service: media_player.select_source
+      data_template:
+        entity_id: media_player.yamaha_receiver
+        source: '{{ source }}'
+    volume_set:
+      service: media_player.volume_set
+      data_template:
+        entity_id: media_player.yamaha_receiver
+        volume_level: '{{ volume_level }}'
+  attributes:
+    state: media_player.yamaha_receiver
+    is_volume_muted: media_player.yamaha_receiver|is_volume_muted
+    volume_level: media_player.yamaha_receiver|volume_level
+    source: media_player.yamaha_receiver|source
+    source_list: media_player.yamaha_receiver|source_list

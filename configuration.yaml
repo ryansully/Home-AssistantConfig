@@ -82,3 +82,4 @@ light: !include lights.yaml
 switch: !include switches.yaml
 device_tracker: !include device_tracker.yaml
 zone: !include zones.yaml
+media_player: !include media_players.yaml
