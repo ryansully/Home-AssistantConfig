@@ -1,5 +1,7 @@
-# Weather prediction
-- platform: yr
+- platform: fedex
+  username: !secret fedex_username
+  password: !secret fedex_password
+  name: FedEx
 
 # Track battery level
 - platform: mqtt
@@ -12,13 +14,6 @@
   name: "Chelse's Phone Battery Level"
   unit_of_measurement: "%"
   value_template: '{{ value_json.batt }}'
-
-# Template sensor for Harmony Hub
-- platform: template
-  sensors:
-    harmony_hub:
-      value_template: '{{ states.remote.harmony_hub.attributes.current_activity }}'
-      friendly_name: 'Harmony Hub'
 
 - platform: speedtest
   minute: 30
@@ -45,3 +40,18 @@
     - volume_size_total
     - volume_size_used
     - volume_percentage_used
+
+# Template sensor for Harmony Hub
+- platform: template
+  sensors:
+    harmony_hub:
+      value_template: '{{ states.remote.harmony_hub.attributes.current_activity }}'
+      friendly_name: 'Harmony Hub'
+
+- platform: ups
+  username: !secret ups_username
+  password: !secret ups_password
+  name: UPS
+
+# Weather prediction
+- platform: yr

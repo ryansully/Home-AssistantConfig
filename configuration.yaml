@@ -74,6 +74,13 @@ mqtt:
   username: !secret mqtt_user
   password: !secret mqtt_password
 
+# disabled until auth bug is fixed
+# https://github.com/home-assistant/home-assistant/issues/9143#issuecomment-339335401
+# https://github.com/happyleavesaoc/python-myusps/issues/9
+#usps:
+#  username: !secret usps_username
+#  password: !secret usps_password
+
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml

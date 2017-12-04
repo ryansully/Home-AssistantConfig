@@ -46,3 +46,5 @@ custom_components/
 *.pem
 @eaDir
 harmony_harmony_hub.conf
+*.pickle
+*.sqlite
