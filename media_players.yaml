@@ -1,5 +1,5 @@
 - platform: kodi
-  host: 192.168.0.50
+  host: htpc.lan
   username: !secret kodi_username
   password: !secret kodi_password
 
