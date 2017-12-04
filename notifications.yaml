@@ -1,0 +1,18 @@
+- platform: html5
+  gcm_api_key: !secret gcm_api_key
+  gcm_sender_id: !secret gcm_sender_id
+
+- name: kodi
+  platform: kodi
+  host: htpc.lan
+  username: !secret kodi_username
+  password: !secret kodi_password
+
+- name: pushbullet
+  platform: pushbullet
+  api_key: !secret pushbullet_api_key
+
+- name: slack
+  platform: slack
+  api_key: !secret slack_api_key
+  default_channel: '#home-assistant'

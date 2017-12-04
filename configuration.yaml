@@ -74,12 +74,6 @@ mqtt:
   username: !secret mqtt_user
   password: !secret mqtt_password
 
-notify:
-  - name: browser
-    platform: html5
-    gcm_api_key: !secret gcm_api_key
-    gcm_sender_id: !secret gcm_sender_id
-
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
@@ -89,3 +83,4 @@ switch: !include switches.yaml
 device_tracker: !include device_tracker.yaml
 zone: !include zones.yaml
 media_player: !include media_players.yaml
+notify: !include notifications.yaml
