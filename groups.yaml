@@ -1,6 +1,20 @@
+default_view:
+  name: Home
+  view: yes
+  icon: mdi:home
+  entities:
+    - group.people
+    - media_player.living_room_universal
+    - media_player.bedroom_universal
+    - group.deliveries
+    - group.speedtest
+    - group.synologydsm
+    - sensor.harmony_hub
+
 rooms:
   name: Rooms
   view: yes
+  icon: mdi:floor-plan
   entities:
     - group.living_room
     - group.bedroom
@@ -8,6 +22,7 @@ rooms:
 lights:
   name: Lights
   view: yes
+  icon: mdi:lightbulb
   entities:
     - group.living_room_lights
     - group.bedroom_lights
@@ -36,11 +51,18 @@ living_room_lights:
     - light.living_room_reading_light
     - light.living_room_white
 
+living_room_ambient_lights:
+  name: Living Room Ambient Lights
+  entities:
+    - light.living_room_color
+    - light.living_room_white
+
 bedroom:
   name: Bedroom
   entities:
     - light.bedroom_color
     - light.bedroom_white
+    - media_player.bedroom_universal
     - media_player.bedroom_speaker
 
 bedroom_lights:
@@ -48,3 +70,38 @@ bedroom_lights:
   entities:
     - light.bedroom_color
     - light.bedroom_white
+
+people:
+  name: People
+  icon: mdi:account-multiple
+  entities:
+    - device_tracker.ryan_phone
+    - sensor.ryans_phone_battery_level
+    - device_tracker.chelse_phone
+    - sensor.chelses_phone_battery_level
+    - device_tracker.noeldelosiphone
+
+deliveries:
+  name: Deliveries
+  entities:
+    - sensor.fedex
+    - sensor.ups
+#    - sensor.usps
+
+speedtest:
+  name: Speedtest
+  entities:
+    - sensor.speedtest_download
+    - sensor.speedtest_upload
+    - sensor.speedtest_ping
+
+synologydsm:
+  name: Synology DiskStation
+  entities:
+    - sensor.cpu_load_total
+    - sensor.memory_usage_real
+    - sensor.network_down
+    - sensor.network_up
+    - sensor.total_size_volume_1
+    - sensor.used_space_volume_1
+    - sensor.volume_used_volume_1
