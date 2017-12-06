@@ -1,6 +1,7 @@
 - name: School
   latitude: !secret zone_school_latitude
   longitude: !secret zone_school_longitude
+  radius: 200
   icon: mdi:school
 
 - name: Work
