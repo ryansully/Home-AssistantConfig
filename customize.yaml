@@ -3,3 +3,6 @@ media_player.aftn:
 
 media_player.living_room_universal:
   friendly_name: Living Room
+
+media_player.bedroom_universal:
+  friendly_name: Bedroom

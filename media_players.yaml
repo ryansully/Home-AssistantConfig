@@ -59,3 +59,38 @@
     volume_level: media_player.yamaha_receiver|volume_level
     source: media_player.yamaha_receiver|source
     source_list: media_player.yamaha_receiver|source_list
+
+- platform: universal
+  name: bedroom_universal
+  children:
+    - media_player.bedroom_speaker
+  commands:
+    turn_on:
+      service: media_player.turn_on
+      data:
+        entity_id: media_player.bedroom_speaker
+    turn_off:
+      service: media_player.turn_off
+      data:
+        entity_id: media_player.bedroom_speaker
+    volume_up:
+      service: media_player.volume_up
+      data:
+        entity_id: media_player.bedroom_speaker
+    volume_down:
+      service: media_player.volume_down
+      data:
+        entity_id: media_player.bedroom_speaker
+    volume_mute:
+      service: media_player.volume_mute
+      data:
+        entity_id: media_player.bedroom_speaker
+    volume_set:
+      service: media_player.volume_set
+      data_template:
+        entity_id: media_player.bedroom_speaker
+        volume_level: '{{ volume_level }}'
+  attributes:
+    state: media_player.bedroom_speaker
+    is_volume_muted: media_player.bedroom_speaker|is_volume_muted
+    volume_level: media_player.bedroom_speaker|volume_level
