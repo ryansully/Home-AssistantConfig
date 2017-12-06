@@ -81,6 +81,10 @@ mqtt:
 #  username: !secret usps_username
 #  password: !secret usps_password
 
+device_sun_light_trigger:
+  light_group: group.living_room_ambient_lights
+  light_profile: relax
+
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
