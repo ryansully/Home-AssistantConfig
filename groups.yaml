@@ -25,6 +25,7 @@ lights:
   icon: mdi:lightbulb
   entities:
     - group.living_room_lights
+    - group.living_room_ambient_lights
     - group.bedroom_lights
 
 living_room:
