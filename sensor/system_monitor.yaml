@@ -1,0 +1,13 @@
+- platform: synologydsm
+  host: 192.168.0.20
+  port: 50000
+  username: !secret synologydsm_username
+  password: !secret synologydsm_password
+  monitored_conditions:
+    - cpu_total_load
+    - memory_real_usage
+    - network_up
+    - network_down
+    - volume_size_total
+    - volume_size_used
+    - volume_percentage_used

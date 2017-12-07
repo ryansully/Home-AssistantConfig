@@ -1,52 +1,18 @@
-- platform: fedex
-  username: !secret fedex_username
-  password: !secret fedex_password
-  name: FedEx
-
 # Track battery level
 - platform: mqtt
   state_topic: "owntracks/ryan/phone"
   name: ryan_phone_mqtt_battery
   unit_of_measurement: "%"
   value_template: '{{ value_json.batt }}'
+
 - platform: mqtt
   state_topic: "owntracks/chelse/phone"
   name: chelse_phone_mqtt_battery
   unit_of_measurement: "%"
   value_template: '{{ value_json.batt }}'
 
-- platform: speedtest
-  minute: 30
-  hour:
-    - 0
-    - 6
-    - 12
-    - 18
-  monitored_conditions:
-    - ping
-    - download
-    - upload
-
-- platform: synologydsm
-  host: 192.168.0.20
-  port: 50000
-  username: !secret synologydsm_username
-  password: !secret synologydsm_password
-  monitored_conditions:
-    - cpu_total_load
-    - memory_real_usage
-    - network_up
-    - network_down
-    - volume_size_total
-    - volume_size_used
-    - volume_percentage_used
-
 - platform: template
   sensors:
-    # Template sensor for Harmony Hub
-    harmony_hub:
-      value_template: '{{ states.remote.harmony_hub.attributes.current_activity }}'
-      friendly_name: 'Harmony Hub'
     ryans_phone_battery_level:
       friendly_name: "Ryan's Phone Battery Level"
       entity_id: sensor.ryan_phone_mqtt_battery
@@ -77,11 +43,3 @@
         {% else %}
           mdi:battery-alert
         {% endif %}
-
-- platform: ups
-  username: !secret ups_username
-  password: !secret ups_password
-  name: UPS
-
-# Weather prediction
-- platform: yr
