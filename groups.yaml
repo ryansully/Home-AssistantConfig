@@ -22,7 +22,7 @@ rooms:
 lights:
   name: Lights
   view: yes
-  icon: mdi:lightbulb
+  icon: mdi:lightbulb-on
   entities:
     - group.living_room_lights
     - group.living_room_ambient_lights
