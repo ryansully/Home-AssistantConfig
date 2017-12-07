@@ -85,7 +85,7 @@ device_sun_light_trigger:
   light_group: group.living_room_ambient_lights
   light_profile: relax
 
-group: !include groups.yaml
+group: !include_dir_merge_named group
 automation: !include automations.yaml
 script: !include scripts.yaml
 sensor: !include_dir_merge_list sensor

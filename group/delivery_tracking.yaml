@@ -1,0 +1,6 @@
+deliveries:
+  name: Deliveries
+  entities:
+    - sensor.fedex
+    - sensor.ups
+#    - sensor.usps

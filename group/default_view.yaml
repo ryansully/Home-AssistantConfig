@@ -1,0 +1,13 @@
+default_view:
+  name: Home
+  view: yes
+  icon: mdi:home
+  entities:
+    - group.people
+    - media_player.living_room_universal
+    - media_player.bedroom_universal
+    - group.deliveries
+    - group.speedtest
+    - group.synologydsm
+    - sensor.harmony_hub
+    - sensor.dark_sky_temperature

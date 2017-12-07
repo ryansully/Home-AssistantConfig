@@ -1,0 +1,27 @@
+lights:
+  name: Lights
+  view: yes
+  icon: mdi:lightbulb-on
+  entities:
+    - group.living_room_lights
+    - group.living_room_ambient_lights
+    - group.bedroom_lights
+
+living_room_lights:
+  name: Living Room Lights
+  entities:
+    - light.living_room_color
+    - light.living_room_reading_light
+    - light.living_room_white
+
+living_room_ambient_lights:
+  name: Living Room Ambient Lights
+  entities:
+    - light.living_room_color
+    - light.living_room_white
+
+bedroom_lights:
+  name: Bedroom Lights
+  entities:
+    - light.bedroom_color
+    - light.bedroom_white

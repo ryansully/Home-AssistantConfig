@@ -1,0 +1,9 @@
+people:
+  name: People
+  icon: mdi:account-multiple
+  entities:
+    - device_tracker.ryan_phone
+    - sensor.ryans_phone_battery_level
+    - device_tracker.chelse_phone
+    - sensor.chelses_phone_battery_level
+    - device_tracker.noeldelosiphone
