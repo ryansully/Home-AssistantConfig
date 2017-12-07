@@ -1,0 +1,25 @@
+- platform: darksky
+  api_key: !secret darksky_api_key
+  monitored_conditions:
+    - summary
+    - precip_intensity
+    - precip_intensity_max
+    - temperature
+    - apparent_temperature
+    - wind_speed
+    - wind_bearing
+    - cloud_cover
+    - humidity
+    - visibility
+    - minutely_summary
+    - hourly_summary
+    - daily_summary
+    - temperature_max
+    - temperature_min
+    - uv_index
+
+# Moon phases
+- platform: moon
+
+# Weather prediction
+- platform: yr
