@@ -12,6 +12,7 @@ living_room:
     - light.living_room_color
     - light.living_room_reading_light
     - light.living_room_white
+    - light.tv_backlight
     - media_player.living_room_universal
     - media_player.samsung_tv_remote
     - media_player.yamaha_receiver
@@ -21,7 +22,7 @@ living_room:
     - media_player.living_room_chromecast
     - media_player.living_room_speaker
     - remote.harmony_hub
-    - switch.tv_back_light
+    - switch.bar_accent_light
 
 bedroom:
   name: Bedroom

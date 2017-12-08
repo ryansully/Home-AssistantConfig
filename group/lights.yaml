@@ -13,6 +13,8 @@ living_room_lights:
     - light.living_room_color
     - light.living_room_reading_light
     - light.living_room_white
+    - light.tv_backlight
+    - switch.bar_accent_light
 
 living_room_ambient_lights:
   name: Living Room Ambient Lights
