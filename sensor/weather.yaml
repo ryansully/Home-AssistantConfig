@@ -21,5 +21,39 @@
 # Moon phases
 - platform: moon
 
+- platform: wunderground
+  api_key: !secret wunderground_api_key
+  monitored_conditions:
+    - observation_time
+    - alerts
+    - feelslike_f
+    - heat_index_f
+    - temperature_string
+    - temp_high_record_f
+    - temp_high_1d_f
+    - temp_f
+    - temp_low_1d_f
+    - temp_low_record_f
+    - precip_1d
+    - precip_1d_in
+    - wind_mph
+    - wind_1d_mph
+    - wind_degrees
+    - wind_dir
+    - wind_string
+    - relative_humidity
+    - solarradiation
+    - UV
+    - visibility_mi
+    - weather
+    - weather_1d
+    - weather_1n
+    - weather_2d
+    - weather_2n
+    - weather_3d
+    - weather_3n
+    - weather_4d
+    - weather_4n
+
 # Weather prediction
 - platform: yr

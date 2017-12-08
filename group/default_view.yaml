@@ -11,3 +11,4 @@ default_view:
     - group.synologydsm
     - sensor.harmony_hub
     - sensor.dark_sky_temperature
+    - sensor.pws_temp_f
