@@ -1,24 +1,24 @@
 - platform: tplink
-  host: 192.168.0.134
+  host: 192.168.0.160
   name: Bedroom Color
 
 - platform: tplink
-  host: 192.168.0.128
+  host: 192.168.0.170
   name: Bedroom White
 
 - platform: tplink
-  host: 192.168.0.110
+  host: 192.168.0.161
   name: Living Room Color
 
 - platform: tplink
-  host: 192.168.0.130
+  host: 192.168.0.172
   name: Living Room Reading Light
 
 - platform: tplink
-  host: 192.168.0.109
+  host: 192.168.0.171
   name: Living Room White
 
 - platform: yeelight
   devices:
-    192.168.0.117:
+    192.168.0.180:
       name: TV Backlight

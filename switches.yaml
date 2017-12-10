@@ -1,3 +1,3 @@
 - platform: tplink
-  host: 192.168.0.125
+  host: 192.168.0.190
   name: Bar Accent Light
