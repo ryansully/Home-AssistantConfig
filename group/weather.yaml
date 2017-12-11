@@ -5,6 +5,7 @@ weather:
   entities:
     - sun.sun
     - sensor.moon
+    - camera.los_angeles_weather
     - group.weather_overview
     - group.daily_forecast
     - group.dark_sky
