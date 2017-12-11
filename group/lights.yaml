@@ -5,6 +5,7 @@ lights:
   entities:
     - group.living_room_lights
     - group.living_room_ambient_lights
+    - group.living_room_accent_lights
     - group.bedroom_lights
 
 living_room_lights:
@@ -21,6 +22,12 @@ living_room_ambient_lights:
   entities:
     - light.living_room_color
     - light.living_room_white
+
+living_room_accent_lights:
+  name: Living Room Accent Lights
+  entities:
+    - light.tv_backlight
+    - light.bar_accent_light
 
 bedroom_lights:
   name: Bedroom Lights
