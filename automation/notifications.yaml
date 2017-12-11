@@ -1,0 +1,19 @@
+- id: auto_startup_notification
+  alias: 'Startup Notification'
+  trigger:
+    - platform: homeassistant
+      event: start
+  action:
+    - service: notify.slack
+      data:
+        message: 'Home Assistant has started.'
+
+- id: auto_update_available_notification
+  alias: 'Update Available Notifications'
+  trigger:
+    platform: state
+    entity_id: updater.updater
+  action:
+    - service: notify.slack
+      data:
+        message: 'Update for Home Assistant is available.'
