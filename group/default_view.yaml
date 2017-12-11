@@ -3,7 +3,7 @@ default_view:
   view: yes
   icon: mdi:home
   entities:
-    - group.people
+    - group.people_with_battery
     - media_player.living_room_universal
     - media_player.bedroom_universal
     - group.deliveries
