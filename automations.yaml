@@ -4,10 +4,7 @@
     - platform: sun
       event: sunset
   action:
-    - service: light.turn_on
-      entity_id: light.tv_backlight
-    - service: switch.turn_on
-      entity_id: switch.bar_accent_light
+    - service: script.turn_on_relaxing_accent_lights
 
 - id: auto_accent_lights_off
   alias: 'Turn off accent lights at sunrise'
@@ -16,6 +13,4 @@
       event: sunrise
   action:
     - service: light.turn_off
-      entity_id: light.tv_backlight
-    - service: switch.turn_off
-      entity_id: switch.bar_accent_light
+      entity_id: group.living_room_accent_lights

@@ -1,0 +1,7 @@
+turn_on_relaxing_accent_lights:
+  alias: Turn on relaxing accent lights
+  sequence:
+    - service: light.turn_on
+      data:
+        entity_id: group.living_room_accent_lights
+        profile: relax
