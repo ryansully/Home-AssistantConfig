@@ -4,7 +4,6 @@ people:
   entities:
     - device_tracker.ryan_phone
     - device_tracker.chelse_phone
-    - device_tracker.noeldelosiphone
 
 people_with_battery:
   name: People
@@ -14,4 +13,3 @@ people_with_battery:
     - sensor.ryans_phone_battery_level
     - device_tracker.chelse_phone
     - sensor.chelses_phone_battery_level
-    - device_tracker.noeldelosiphone
