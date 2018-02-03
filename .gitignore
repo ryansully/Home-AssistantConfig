@@ -48,3 +48,4 @@ custom_components/
 harmony_harmony_hub.conf
 *.pickle
 *.sqlite
+nest.conf

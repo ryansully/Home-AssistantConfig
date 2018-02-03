@@ -9,6 +9,9 @@ default_view:
     - group.deliveries
     - group.speedtest
     - group.synologydsm
+    - sensor.living_room_thermostat_hvac_state
+    - sensor.living_room_thermostat_target
+    - sensor.living_room_thermostat_temperature
     - sensor.harmony_hub
     - sensor.dark_sky_temperature
     - sensor.pws_temp_f

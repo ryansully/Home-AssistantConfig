@@ -99,6 +99,10 @@ google_assistant:
 
 emulated_hue:
 
+nest:
+  client_id: !secret nest_client_id
+  client_secret: !secret nest_client_secret
+
 group: !include_dir_merge_named group
 automation: !include_dir_merge_list automation
 script: !include scripts.yaml

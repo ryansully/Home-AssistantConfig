@@ -9,6 +9,7 @@ rooms:
 living_room:
   name: Living Room
   entities:
+    - climate.living_room
     - light.living_room_color
     - light.living_room_reading_light
     - light.living_room_white
