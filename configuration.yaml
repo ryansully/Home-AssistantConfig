@@ -97,6 +97,8 @@ google_assistant:
     - light
     - group
 
+emulated_hue:
+
 group: !include_dir_merge_named group
 automation: !include_dir_merge_list automation
 script: !include scripts.yaml
