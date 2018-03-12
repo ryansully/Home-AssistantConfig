@@ -9,6 +9,7 @@ default_view:
     - group.deliveries
     - group.speedtest
     - group.synologydsm
+    - group.transmission
     - sensor.living_room_thermostat_hvac_state
     - sensor.living_room_thermostat_target
     - sensor.living_room_thermostat_temperature
