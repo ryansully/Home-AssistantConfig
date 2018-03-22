@@ -6,6 +6,7 @@ default_view:
     - group.people_with_battery
     - media_player.living_room_universal
     - media_player.bedroom_universal
+    - media_player.spotify
     - group.deliveries
     - group.speedtest
     - group.synologydsm
