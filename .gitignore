@@ -49,3 +49,5 @@ harmony_harmony_hub.conf
 *.pickle
 *.sqlite
 nest.conf
+entity_registry.yaml
+emulated_hue_ids.json
