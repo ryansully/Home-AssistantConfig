@@ -48,6 +48,6 @@ custom_components/
 harmony_harmony_hub.conf
 *.pickle
 *.sqlite
-nest.conf
+*.conf
 entity_registry.yaml
 emulated_hue_ids.json

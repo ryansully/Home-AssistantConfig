@@ -15,12 +15,11 @@ living_room:
     - light.living_room_white
     - light.tv_backlight
     - media_player.living_room_universal
-    - media_player.samsung_tv_remote
+    - media_player.sony_bravia_tv
+    - media_player.xbr55x900e
     - media_player.yamaha_receiver
-    - media_player.universal
     - media_player.kodi
     - media_player.aftn
-    - media_player.living_room_chromecast
     - media_player.living_room_speaker
     - remote.harmony_hub
     - switch.bar_accent_light
@@ -31,4 +30,6 @@ bedroom:
     - light.bedroom_color
     - light.bedroom_white
     - media_player.bedroom_universal
+    - media_player.bedroom_roku
+    - media_player.bedroom_chromecast
     - media_player.bedroom_speaker

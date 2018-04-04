@@ -1,3 +1,8 @@
+- platform: braviatv
+  host: 192.168.0.128
+
+- platform: cast
+
 - platform: kodi
   host: htpc.lan
   username: !secret kodi_username
@@ -5,8 +10,7 @@
 
 - platform: plex
 
-- platform: samsungtv
-  host: 192.168.0.116
+- platform: roku
 
 - platform: spotify
   client_id: !secret spotify_client_id
@@ -18,12 +22,12 @@
     HDMI1: "HTPC"
     HDMI3: "Wii U"
     HDMI4: "Fire TV"
-    HDMI5: "Chromecast"
 
 - platform: universal
   name: living_room_universal
   children:
-    - media_player.living_room_chromecast
+    - media_player.sony_bravia_tv
+    - media_player.xbr55x900e
     - media_player.aftn
     - media_player.kodi
   commands:
@@ -67,6 +71,8 @@
 - platform: universal
   name: bedroom_universal
   children:
+    - media_player.bedroom_roku
+    - media_player.bedroom_chromecast
     - media_player.bedroom_speaker
   commands:
     turn_on:
