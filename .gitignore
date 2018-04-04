@@ -51,3 +51,4 @@ harmony_harmony_hub.conf
 *.conf
 entity_registry.yaml
 emulated_hue_ids.json
+.spotify-token-cache
