@@ -26,10 +26,10 @@
 - platform: universal
   name: living_room_universal
   children:
-    - media_player.sony_bravia_tv
+    - media_player.kodi
     - media_player.xbr55x900e
     - media_player.aftn
-    - media_player.kodi
+    - media_player.sony_bravia_tv
   commands:
     turn_on:
       service: media_player.turn_on
@@ -71,9 +71,9 @@
 - platform: universal
   name: bedroom_universal
   children:
-    - media_player.bedroom_roku
     - media_player.bedroom_chromecast
     - media_player.bedroom_speaker
+    - media_player.bedroom_roku
   commands:
     turn_on:
       service: media_player.turn_on
