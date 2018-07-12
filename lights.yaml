@@ -34,3 +34,12 @@
       turn_off:
         - service: switch.turn_off
           entity_id: switch.bar_accent_light
+    kitchen_light:
+      friendly_name: Kitchen Light
+      value_template: "{{ 'on' if is_state('switch.kitchen_light', 'on') else 'off' }}"
+      turn_on:
+        - service: switch.turn_on
+          entity_id: switch.kitchen_light
+      turn_off:
+        - service: switch.turn_off
+          entity_id: switch.kitchen_light

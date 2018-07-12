@@ -6,6 +6,7 @@ lights:
     - group.living_room_lights
     - group.living_room_ambient_lights
     - group.living_room_accent_lights
+    - group.kitchen_lights
     - group.bedroom_lights
 
 living_room_lights:
@@ -28,6 +29,11 @@ living_room_accent_lights:
   entities:
     - light.tv_backlight
     - light.bar_accent_light
+
+kitchen_lights:
+  name: Kitchen Lights
+  entities:
+    - light.kitchen_light
 
 bedroom_lights:
   name: Bedroom Lights
