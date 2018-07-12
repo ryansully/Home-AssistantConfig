@@ -17,6 +17,7 @@ living_room_lights:
     - light.living_room_white
     - light.tv_backlight
     - light.bar_accent_light
+    - light.ceiling_fan_light
 
 living_room_ambient_lights:
   name: Living Room Ambient Lights

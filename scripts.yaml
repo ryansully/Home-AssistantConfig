@@ -1,3 +1,17 @@
+turn_on_ceiling_fan_light:
+  alias: Turn on ceiling fan light
+  sequence:
+    - service: ifttt.trigger
+      data:
+        event: ceiling_fan_light_on
+
+turn_off_ceiling_fan_light:
+  alias: Turn off ceiling fan light
+  sequence:
+    - service: ifttt.trigger
+      data:
+        event: ceiling_fan_light_off
+
 turn_on_relaxing_accent_lights:
   alias: Turn on relaxing accent lights
   sequence:
